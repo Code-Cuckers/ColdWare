@@ -13,7 +13,7 @@ import javax.swing.SwingUtilities;
 
 /**
  *
- * @author DAW2
+ * @author david
  */
 public class InfoPartidaNormal extends javax.swing.JPanel  implements ActionListener {
 
@@ -36,11 +36,16 @@ public class InfoPartidaNormal extends javax.swing.JPanel  implements ActionList
     private void initComponents() {
 
         Volver = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        regla1 = new javax.swing.JLabel();
+        labelReglas = new javax.swing.JLabel();
+        regla6 = new javax.swing.JLabel();
+        regla7 = new javax.swing.JLabel();
+        regla8 = new javax.swing.JLabel();
+        regla9 = new javax.swing.JLabel();
+        regla10 = new javax.swing.JLabel();
+        regla11 = new javax.swing.JLabel();
+
+        setPreferredSize(new java.awt.Dimension(1280, 768));
 
         Volver.setText("Volver");
         Volver.addActionListener(new java.awt.event.ActionListener() {
@@ -49,46 +54,81 @@ public class InfoPartidaNormal extends javax.swing.JPanel  implements ActionList
             }
         });
 
-        jLabel2.setText("modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego");
+        regla1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        regla1.setText("1 - Se necesita un minimo de 3 equipos para jugar y no hay límite máximo (1.000.000.000 equipos Por limitaciones del programa).");
 
-        jLabel3.setText("modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego");
+        labelReglas.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        labelReglas.setText("REGLAS DEL JUEGO");
 
-        jLabel4.setText("modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego");
+        regla6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        regla6.setText("2 - Existen diferentes tipos de equipos. Cada tipo tiene sus propias estadisticas y estilo de juego.");
 
-        jLabel5.setText("modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego");
+        regla7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        regla7.setText("3 - Se puede atacar a diferentes equipos con diferentes ataques en la misma ronda.");
+
+        regla8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        regla8.setText("4 - Cuando las vidas de un equipo llegan a 0 este queda eliminado.");
+
+        regla9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        regla9.setText("5 - Los misiles de defensa cuestan el doble.");
+
+        regla10.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        regla10.setText("Si tenemos 50 misiles y usamos 40 para atacar, solo podremos defendernos con 5 (nos costaria 10 misiles).");
+
+        regla11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        regla11.setText("Ejemplo defensa:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(758, Short.MAX_VALUE)
-                .addComponent(Volver, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Volver, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(518, 518, 518)
+                                .addComponent(labelReglas))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(121, 121, 121)
+                                .addComponent(regla11)
+                                .addGap(18, 18, 18)
+                                .addComponent(regla10)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(52, 52, 52)
+                .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 657, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(regla9)
+                    .addComponent(regla8)
+                    .addComponent(regla7)
+                    .addComponent(regla6)
+                    .addComponent(regla1))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 392, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(labelReglas)
+                .addGap(79, 79, 79)
+                .addComponent(regla1)
+                .addGap(18, 55, Short.MAX_VALUE)
+                .addComponent(regla6)
+                .addGap(18, 55, Short.MAX_VALUE)
+                .addComponent(regla7)
+                .addGap(18, 55, Short.MAX_VALUE)
+                .addComponent(regla8)
+                .addGap(18, 59, Short.MAX_VALUE)
+                .addComponent(regla9)
+                .addGap(103, 103, 103)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(regla11)
+                    .addComponent(regla10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(Volver, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -101,11 +141,14 @@ public class InfoPartidaNormal extends javax.swing.JPanel  implements ActionList
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Volver;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel labelReglas;
+    private javax.swing.JLabel regla1;
+    private javax.swing.JLabel regla10;
+    private javax.swing.JLabel regla11;
+    private javax.swing.JLabel regla6;
+    private javax.swing.JLabel regla7;
+    private javax.swing.JLabel regla8;
+    private javax.swing.JLabel regla9;
     // End of variables declaration//GEN-END:variables
 
     @Override

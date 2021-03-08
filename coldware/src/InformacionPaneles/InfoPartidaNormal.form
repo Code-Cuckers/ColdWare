@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1280, 768]"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -16,38 +21,64 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="758" max="32767" attributes="0"/>
-              <Component id="Volver" min="-2" pref="96" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Volver" min="-2" pref="96" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="518" max="-2" attributes="0"/>
+                              <Component id="labelReglas" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                              <Component id="regla11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="regla10" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" pref="657" max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" pref="592" max="-2" attributes="0"/>
-                  <Component id="jLabel3" min="-2" pref="592" max="-2" attributes="0"/>
-                  <Component id="jLabel4" min="-2" pref="592" max="-2" attributes="0"/>
-                  <Component id="jLabel5" min="-2" pref="592" max="-2" attributes="0"/>
+                  <Component id="regla9" min="-2" max="-2" attributes="0"/>
+                  <Component id="regla8" min="-2" max="-2" attributes="0"/>
+                  <Component id="regla7" min="-2" max="-2" attributes="0"/>
+                  <Component id="regla6" min="-2" max="-2" attributes="0"/>
+                  <Component id="regla1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="69" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="392" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="labelReglas" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+              <Component id="regla1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" pref="55" max="32767" attributes="0"/>
+              <Component id="regla6" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" pref="55" max="32767" attributes="0"/>
+              <Component id="regla7" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" pref="55" max="32767" attributes="0"/>
+              <Component id="regla8" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" pref="59" max="32767" attributes="0"/>
+              <Component id="regla9" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="regla11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="regla10" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="143" max="32767" attributes="0"/>
               <Component id="Volver" min="-2" pref="36" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -63,26 +94,68 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VolverActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="regla1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="1 - Se necesita un minimo de 3 equipos para jugar y no hay l&#xed;mite m&#xe1;ximo (1.000.000.000 equipos Por limitaciones del programa)."/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="labelReglas">
       <Properties>
-        <Property name="text" type="java.lang.String" value="modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="REGLAS DEL JUEGO"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="regla6">
       <Properties>
-        <Property name="text" type="java.lang.String" value="modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="2 - Existen diferentes tipos de equipos. Cada tipo tiene sus propias estadisticas y estilo de juego."/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="regla7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="modo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juegomodo de juego"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="3 - Se puede atacar a diferentes equipos con diferentes ataques en la misma ronda."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="regla8">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="4 - Cuando las vidas de un equipo llegan a 0 este queda eliminado."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="regla9">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="5 - Los misiles de defensa cuestan el doble."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="regla10">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Si tenemos 50 misiles y usamos 40 para atacar, solo podremos defendernos con 5 (nos costaria 10 misiles)."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="regla11">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Ejemplo defensa:"/>
       </Properties>
     </Component>
   </SubComponents>

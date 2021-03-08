@@ -45,21 +45,19 @@ public class Eleccion_Jugador3 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLayeredPane1 = new javax.swing.JLayeredPane();
-        increment_dmg = new javax.swing.JButton();
-        mas_fireball = new javax.swing.JButton();
         curacion_jugador = new javax.swing.JButton();
+        mas_fireball = new javax.swing.JButton();
+        increment_dmg = new javax.swing.JButton();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jLabel1 = new javax.swing.JLabel();
         Nombre_Jugador = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1280, 768));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descansi.gif"))); // NOI18N
-
-        increment_dmg.setText("+ 4 PA maximos");
-        increment_dmg.addActionListener(new java.awt.event.ActionListener() {
+        curacion_jugador.setText("+50 de HP para ti guapo");
+        curacion_jugador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                increment_dmgActionPerformed(evt);
+                curacion_jugadorActionPerformed(evt);
             }
         });
 
@@ -70,72 +68,72 @@ public class Eleccion_Jugador3 extends javax.swing.JPanel {
             }
         });
 
-        curacion_jugador.setText("+50 de HP para ti guapo");
-        curacion_jugador.addActionListener(new java.awt.event.ActionListener() {
+        increment_dmg.setText("+ 4 PA maximos");
+        increment_dmg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                curacion_jugadorActionPerformed(evt);
+                increment_dmgActionPerformed(evt);
             }
         });
 
-        Nombre_Jugador.setText("Haga su eleccion ");
-        Nombre_Jugador.setEnabled(false);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descanso.gif"))); // NOI18N
 
-        jLayeredPane1.setLayer(increment_dmg, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(mas_fireball, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(curacion_jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(Nombre_Jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(203, 203, 203)
-                .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 196, Short.MAX_VALUE)
-                .addComponent(mas_fireball, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(185, 185, 185))
-            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addGap(577, 577, 577)
-                .addComponent(Nombre_Jugador)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(102, 102, 102)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 969, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(107, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(Nombre_Jugador)
-                .addGap(65, 65, 65)
-                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mas_fireball, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(535, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
+
+        Nombre_Jugador.setText("Haga su eleccion ");
+        Nombre_Jugador.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(563, 563, 563)
+                        .addComponent(Nombre_Jugador)))
+                .addContainerGap(38, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addComponent(jLabel1)
-                    .addGap(0, 79, Short.MAX_VALUE)))
+                .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(132, 132, 132)
+                .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(134, 134, 134)
+                .addComponent(mas_fireball, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(171, 171, 171))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 12, Short.MAX_VALUE)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 773, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(8, 8, 8)
+                .addComponent(Nombre_Jugador)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mas_fireball, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

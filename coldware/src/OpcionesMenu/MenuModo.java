@@ -5,29 +5,14 @@
  */
 package OpcionesMenu;
 
-import ColdWar.Eleccion_Personaje;
 import BossRush.BossRushTutorial;
-import BossRush.BossRushTutorial;
-import BossRush.BossRushTutorial;
-import BossRush.BossRushTutorial;
-import BossRush.Nombre_Boss_Rush;
-import BossRush.Nombre_Boss_Rush;
-import BossRush.Nombre_Boss_Rush;
-import BossRush.Nombre_Boss_Rush;
 import BossRush.Nombre_Boss_Rush;
 import BossRush.PanelBossRush;
-import ColdWar.Eleccion_Personaje;
-import ColdWar.Eleccion_Personaje;
 import OpcionesMenu.MenuPrinicipal;
 import menucoldware.FrameGeneral;
 import InformacionPaneles.InfoBossRush;
 import InformacionPaneles.InfoPartidaNormal;
-import OpcionesMenu.MenuPrinicipal;
-import OpcionesMenu.MenuPrinicipal;
-import OpcionesMenu.MenuPrinicipal;
-import OpcionesMenu.MenuPrinicipal;
-import OpcionesMenu.MenuPrinicipal;
-import OpcionesMenu.MenuPrinicipal;
+import PartidaNormal.EleccionNumEquipos;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.SwingUtilities;
@@ -47,6 +32,7 @@ public class MenuModo extends javax.swing.JPanel implements ActionListener  {
             Volver.addActionListener(this);
             infoBossRush.addActionListener(this);
             BossRush.addActionListener(this);
+            partidaNormal.addActionListener(this);
     }
 
     /**
@@ -58,17 +44,17 @@ public class MenuModo extends javax.swing.JPanel implements ActionListener  {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        partidaNornal = new javax.swing.JButton();
+        partidaNormal = new javax.swing.JButton();
         BossRush = new javax.swing.JButton();
         infoBossRush = new javax.swing.JButton();
         infoPartidaNormal = new javax.swing.JButton();
         Volver = new javax.swing.JButton();
         Tutorial = new javax.swing.JButton();
 
-        partidaNornal.setText("Partida Normal");
-        partidaNornal.addActionListener(new java.awt.event.ActionListener() {
+        partidaNormal.setText("Cold War");
+        partidaNormal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                partidaNornalActionPerformed(evt);
+                partidaNormalActionPerformed(evt);
             }
         });
 
@@ -104,7 +90,7 @@ public class MenuModo extends javax.swing.JPanel implements ActionListener  {
                 .addGap(69, 69, 69)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(BossRush, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(partidaNornal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(partidaNormal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(infoPartidaNormal)
@@ -118,7 +104,7 @@ public class MenuModo extends javax.swing.JPanel implements ActionListener  {
             .addGroup(layout.createSequentialGroup()
                 .addGap(178, 178, 178)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(partidaNornal, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(partidaNormal, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(infoPartidaNormal, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -146,17 +132,14 @@ public class MenuModo extends javax.swing.JPanel implements ActionListener  {
         
     }//GEN-LAST:event_TutorialActionPerformed
 
-    private void partidaNornalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_partidaNornalActionPerformed
+    private void partidaNormalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_partidaNormalActionPerformed
         // TODO add your handling code here:
-       
+        
         FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
 	marco.remove(this);
-	marco.add(new Eleccion_Personaje());
+	marco.add(new EleccionNumEquipos());
 	marco.setVisible(true);
-        
-        
-        
-    }//GEN-LAST:event_partidaNornalActionPerformed
+    }//GEN-LAST:event_partidaNormalActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -165,7 +148,7 @@ public class MenuModo extends javax.swing.JPanel implements ActionListener  {
     private javax.swing.JButton Volver;
     private javax.swing.JButton infoBossRush;
     private javax.swing.JButton infoPartidaNormal;
-    private javax.swing.JButton partidaNornal;
+    private javax.swing.JButton partidaNormal;
     // End of variables declaration//GEN-END:variables
 
     @Override

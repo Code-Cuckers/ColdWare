@@ -1,5 +1,6 @@
  package BossRush;
 
+import OpcionesMenu.MenuModo;
 import java.awt.Color;
 import java.util.Random;
 import javax.swing.JOptionPane;
@@ -65,59 +66,27 @@ public class BossRush3 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel4 = new javax.swing.JLabel();
-        jLayeredPane2 = new javax.swing.JLayeredPane();
+        atacar = new javax.swing.JButton();
+        Fire_Ball = new javax.swing.JButton();
         Salir = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        Barra_enemigo = new javax.swing.JProgressBar();
         Nombre_Jugador = new javax.swing.JLabel();
         Barra_recursos = new javax.swing.JProgressBar();
-        Barra_jugador = new javax.swing.JProgressBar();
         jLabel2 = new javax.swing.JLabel();
-        hp_jugador = new javax.swing.JLabel();
-        atacar = new javax.swing.JButton();
-        random_effect = new javax.swing.JToggleButton();
-        Barra_enemigo = new javax.swing.JProgressBar();
-        hp_enemigo = new javax.swing.JLabel();
+        Barra_jugador = new javax.swing.JProgressBar();
         Boss_Name = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        Fire_Ball = new javax.swing.JButton();
+        hp_jugador = new javax.swing.JLabel();
         Curacion = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        hp_enemigo = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        log = new javax.swing.JTextArea();
+        cd_heal = new javax.swing.JLabel();
+        random_effect = new javax.swing.JToggleButton();
+        FireBall_label = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1280, 768));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/123123123.gif"))); // NOI18N
-
-        Salir.setText("Salir");
-        Salir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalirActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/c0d38c518fdbf6012e0475bb7a0598a5.gif"))); // NOI18N
-
-        Nombre_Jugador.setBackground(new java.awt.Color(255, 255, 255));
-        Nombre_Jugador.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Nombre_Jugador.setForeground(new java.awt.Color(255, 255, 255));
-        Nombre_Jugador.setLabelFor(Barra_enemigo);
-        Nombre_Jugador.setText("TU");
-
-        Barra_recursos.setForeground(new java.awt.Color(0, 51, 204));
-        Barra_recursos.setMaximum(10);
-        Barra_recursos.setValue(10);
-
-        Barra_jugador.setForeground(new java.awt.Color(51, 232, 22));
-        Barra_jugador.setValue(100);
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Punto de accion");
-
-        hp_jugador.setBackground(new java.awt.Color(255, 255, 255));
-        hp_jugador.setForeground(new java.awt.Color(255, 255, 255));
-        hp_jugador.setText("% Vida");
 
         atacar.setText("Atacar");
         atacar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -131,31 +100,6 @@ public class BossRush3 extends javax.swing.JPanel {
             }
         });
 
-        random_effect.setText("Random effect ");
-        random_effect.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                random_effectActionPerformed(evt);
-            }
-        });
-
-        Barra_enemigo.setForeground(new java.awt.Color(51, 232, 22));
-        Barra_enemigo.setMaximum(400);
-        Barra_enemigo.setToolTipText("");
-        Barra_enemigo.setValue(400);
-
-        hp_enemigo.setBackground(new java.awt.Color(255, 255, 255));
-        hp_enemigo.setForeground(new java.awt.Color(255, 255, 255));
-        hp_enemigo.setText("HP");
-
-        Boss_Name.setBackground(new java.awt.Color(255, 255, 255));
-        Boss_Name.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Boss_Name.setForeground(new java.awt.Color(255, 255, 255));
-        Boss_Name.setLabelFor(Barra_enemigo);
-        Boss_Name.setText("Alma de Cenizas ");
-        Boss_Name.setToolTipText("");
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/d9vknnd-9ae1664d-3f3f-4caa-a0a2-5977bc7b8582.gif"))); // NOI18N
-
         Fire_Ball.setText("Fire Ball");
         Fire_Ball.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,10 +107,10 @@ public class BossRush3 extends javax.swing.JPanel {
             }
         });
 
-        Curacion.setText("Heal");
-        Curacion.addActionListener(new java.awt.event.ActionListener() {
+        Salir.setText("Salir");
+        Salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CuracionActionPerformed(evt);
+                SalirActionPerformed(evt);
             }
         });
 
@@ -177,357 +121,407 @@ public class BossRush3 extends javax.swing.JPanel {
             }
         });
 
-        jLayeredPane2.setLayer(Salir, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Nombre_Jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Barra_recursos, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Barra_jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(hp_jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(atacar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(random_effect, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Barra_enemigo, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(hp_enemigo, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Boss_Name, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Fire_Ball, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(Curacion, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(jButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Barra_enemigo.setForeground(new java.awt.Color(51, 232, 22));
+        Barra_enemigo.setMaximum(400);
+        Barra_enemigo.setToolTipText("");
+        Barra_enemigo.setValue(400);
 
-        javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
-        jLayeredPane2.setLayout(jLayeredPane2Layout);
-        jLayeredPane2Layout.setHorizontalGroup(
-            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane2Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(hp_jugador)
-                                    .addComponent(Barra_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Barra_recursos, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(random_effect, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(atacar, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(95, 95, 95)
-                                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Curacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Fire_Ball, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addComponent(Nombre_Jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addGap(779, 779, 779)
-                                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                        .addComponent(hp_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(Boss_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                        .addComponent(Barra_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))))))
-                .addGap(46, 46, 46))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton6)
-                .addContainerGap())
-        );
-        jLayeredPane2Layout.setVerticalGroup(
-            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                        .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hp_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2))
-                    .addComponent(Boss_Name, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addComponent(Barra_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)))
-                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Fire_Ball, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                        .addComponent(atacar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                        .addComponent(Nombre_Jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Barra_recursos, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8)))
-                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Barra_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(hp_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(random_effect, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Curacion, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(45, 45, 45)
-                .addComponent(jButton6))
-        );
+        Nombre_Jugador.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Nombre_Jugador.setLabelFor(Barra_enemigo);
+        Nombre_Jugador.setText("TU");
+
+        Barra_recursos.setForeground(new java.awt.Color(0, 51, 204));
+        Barra_recursos.setMaximum(10);
+        Barra_recursos.setValue(10);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel2.setText("Recursos");
+
+        Barra_jugador.setForeground(new java.awt.Color(51, 232, 22));
+        Barra_jugador.setValue(100);
+
+        Boss_Name.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Boss_Name.setLabelFor(Barra_enemigo);
+        Boss_Name.setText("David mamadisimo");
+
+        hp_jugador.setText("% Vida");
+
+        Curacion.setText("Heal");
+        Curacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CuracionActionPerformed(evt);
+            }
+        });
+
+        hp_enemigo.setText("HP");
+
+        log.setEditable(false);
+        log.setColumns(20);
+        log.setRows(5);
+        log.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jScrollPane1.setViewportView(log);
+
+        cd_heal.setText("CD Curacion");
+
+        random_effect.setText("Random effect ");
+        random_effect.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                random_effectActionPerformed(evt);
+            }
+        });
+
+        FireBall_label.setText("CD FireBall");
+
+        jLabel1.setFont(new java.awt.Font(".SF NS Text", 0, 15)); // NOI18N
+        jLabel1.setText("Acciones del enemigo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addComponent(jLayeredPane2)
+                .addContainerGap(1252, Short.MAX_VALUE)
+                .addComponent(jButton6)
                 .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(cd_heal, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(29, 29, 29)
+                                    .addComponent(Barra_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addContainerGap()
+                                    .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addGap(29, 29, 29)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(Nombre_Jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(Barra_recursos, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hp_jugador, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(191, 191, 191)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(hp_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Boss_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Barra_enemigo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(random_effect, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(atacar, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(35, 35, 35)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Fire_Ball, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Curacion, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(FireBall_label, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(51, 51, 51))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLayeredPane2)
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(85, 85, 85)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(299, 299, 299)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(Barra_recursos, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(31, 31, 31)
+                                        .addComponent(Boss_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent(hp_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Barra_enemigo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(Nombre_Jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(16, 16, 16))
+                            .addComponent(FireBall_label, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(atacar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Fire_Ball, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Curacion, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(random_effect, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Barra_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hp_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cd_heal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jButton6)
+                .addGap(18, 18, 18))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+   
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void CuracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuracionActionPerformed
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
         // TODO add your handling code here:
-
-        //Curacion del jugador
-        vidaa_jugador = vidaa_jugador + 30;
-
-        Barra_jugador.setValue(vidaa_jugador);
-
-        //Curacion.setEnabled(false);
-
-        usos_heal++;
-
-        if (usos_heal == 2){
-
-            Curacion.setEnabled(false);
-
-        }
-    }//GEN-LAST:event_CuracionActionPerformed
-
-    private void Fire_BallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fire_BallActionPerformed
-        // TODO add your handling code here:
-
-        daño_jugador = 25;
-        recursos = recursos -5;
-
-        daño_fireball = daño_jugador + boost_fireball;
-        vida_enemigo = vida_enemigo - daño_fireball;
-
-        ResetBarras();
-
-        usos_fb++;
-
-        if (recursos <= 0){
-            JOptionPane.showMessageDialog(this,"Turno del enemigo");
-
-            if (vida_enemigo <= 0){
-
-                FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-                marco.remove(this);
-                marco.add(new Nombre_Boss_Rush());
-                marco.setVisible(true);
-
-            }else{
-                Turno_Enemigo();
-
-            }
-        }
-
-        if (vidaa_jugador <= 0 ){
-
-            JOptionPane.showMessageDialog(this,"Game Over");
-
-            FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new YouDied());
-            marco.setVisible(true);
-
-        }
-
-        if (vida_enemigo <= 0 ){
-
-            JOptionPane.showMessageDialog(this,"You Win");
-
-            FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new Nombre_Boss_Rush());
-            marco.setVisible(true);
-
-        }
-
-        if(usos_fb == 3 & sifireball){
-
-            Fire_Ball.setEnabled(false);
-
-        }else if(usos_fb == 2 & !sifireball){
-
-            Fire_Ball.setEnabled(false);
-
-        }
-
-        boost_fireball = 0;
-        ResetBarras();
-    }//GEN-LAST:event_Fire_BallActionPerformed
-
-    private void random_effectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_random_effectActionPerformed
-        // TODO add your handling code here:
-
-        //Random efect cuando presionas el boton
-        Random efecto_random = new Random();
-        efectos = efecto_random.nextInt(50);
-
-        if (efectos <= 10){
-
-            boost_atk = boost_atk + 60;
-            JOptionPane.showMessageDialog(this,"Tienes un boost de daño de 60 al atacar normal ");
-
-        }else if (efectos >= 11 && efectos <= 20){
-
-            boost_hp = boost_hp +40;
-            vidaa_jugador = vidaa_jugador + boost_hp;
-            JOptionPane.showMessageDialog(this,"Acabas de recuperar 40 de vida ");
-
-        }else if (efectos >= 21 && efectos <= 30) {
-
-            boost_atk = 80;
-            boost_hp = boost_hp + 80;
-            vidaa_jugador = vidaa_jugador + boost_hp;
-            JOptionPane.showMessageDialog(this,"Acabas de ser bendezido por Eir y recuperas 80 de vida y tienes 80 de daño para el siguiente ataque");
-
-        }else if (efectos >= 31 && efectos <= 40) {
-
-            vidaa_jugador = vidaa_jugador - 30;
-            JOptionPane.showMessageDialog(this,"Vaya parece que la suerte no esta de tu lado hoy, lo siento pero 30 puntos de vida menos ");
-
-        }else if(efectos >= 41 && efectos <= 50){
-
-            boost_fireball = boost_fireball + 100;
-            JOptionPane.showMessageDialog(this,"Sientes una gran energia recorriendo tu cuerpo, Merlin parece estar de buen humor hoy +50 de ataque en la proxima Bola de fuego ");
-
-        }
-
-        random_effect.setEnabled(false);
-        ResetBarras();
-    }//GEN-LAST:event_random_effectActionPerformed
+        
+        //Sale de la partida al presionar Salir
+        FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
+	marco.remove(this);
+	marco.add(new Nombre_Boss_Rush());
+	marco.setVisible(true);
+        
+    }//GEN-LAST:event_SalirActionPerformed
 
     private void atacarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atacarActionPerformed
         // TODO add your handling code here:
-
+       
         recursos = recursos - 2 ;
-
+        
         Random rand = new Random();
-
+        
         daño_jugador = rand.nextInt(18) +1;
-
+        
         daño_jugador = daño_jugador + eleccion_atk;
-        daño_jugador = daño_jugador + boost_atk;
+        daño_jugador = daño_jugador + boost_atk;       
         vida_enemigo = vida_enemigo - daño_jugador;
-
+        
         //Update barras de vida
         ResetBarras();
-
+        
+        
+        
         //Comprobaciones: el enemigo muere, el jugador muere y uso de recursos
         if (recursos <= 0){
-            JOptionPane.showMessageDialog(this,"Turno del enemigo");
-
-            if (vida_enemigo <= 0){
-
-                FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-                marco.remove(this);
-                marco.add(new YouWin());
-                marco.setVisible(true);
-
-            }else{
-                Turno_Enemigo();
-
-            }
+          JOptionPane.showMessageDialog(this,"Turno del enemigo");
+          
+          if (vida_enemigo <= 0){
+              
+        FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
+	marco.remove(this);
+	marco.add(new YouWin());
+	marco.setVisible(true);
+              
+          }else{
+            Turno_Enemigo(); 
+           
+          }
         }
-
+        
+        
         if (vida_enemigo <= 0 ){
-            JOptionPane.showMessageDialog(this,"You Win");
-
-            FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new YouWin());
-            marco.setVisible(true);
+         JOptionPane.showMessageDialog(this,"a morido");
+         
+        
+        FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
+	marco.remove(this);
+	marco.add(new YouWin());
+	marco.setVisible(true);
+        
 
         }
-
+        
         if (vidaa_jugador <= 0 ){
+        
+        JOptionPane.showMessageDialog(this,"Game Over");
 
-            JOptionPane.showMessageDialog(this,"Game Over");
-
-            FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new YouDied());
-            marco.setVisible(true);
-
+        FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
+	marco.remove(this);
+	marco.add(new MenuModo());
+	marco.setVisible(true);
+             
         }
         if (recursos < 5){
-
+            
             Fire_Ball.setEnabled(false);
-
+            
         }else if (usos_fb <2 ){
-
+            
             Fire_Ball.setEnabled(true);
-
+            
         }
         boost_atk = 0;
         Barra_recursos.setValue(recursos);
         //log.setText("El jugador acaba de hacer " + daño_jugador);
+              
     }//GEN-LAST:event_atacarActionPerformed
 
     private void atacarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_atacarMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_atacarMouseClicked
 
-    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+    private void CuracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuracionActionPerformed
         // TODO add your handling code here:
+        
+        
+        //Curacion del jugador
+        vidaa_jugador = vidaa_jugador + 30;
+        
+        Barra_jugador.setValue(vidaa_jugador);
+        
+        if (vidaa_jugador > 100){
+            vidaa_jugador = 100;
+        }
+        
+        //Curacion.setEnabled(false);
+        
+        usos_heal++;
+        
+        if (usos_heal == 2){
+            
+            Curacion.setEnabled(false);
+            
+        }
+        
+    }//GEN-LAST:event_CuracionActionPerformed
 
-        //Sale de la partida al presionar Salir
+    private void Fire_BallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fire_BallActionPerformed
+        // TODO add your handling code here:
+        
+        
+        daño_jugador = 25;
+        recursos = recursos -5;
+        
+        daño_fireball = daño_jugador + boost_fireball;
+        vida_enemigo = vida_enemigo - daño_fireball;
+         
+        ResetBarras();
+        
+        usos_fb++;
+        
+        if (recursos <= 0){
+          JOptionPane.showMessageDialog(this,"Turno del enemigo");
+          
+          if (vida_enemigo <= 0){
+              
         FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
-        marco.remove(this);
-        marco.add(new Nombre_Boss_Rush());
-        marco.setVisible(true);
-    }//GEN-LAST:event_SalirActionPerformed
+	marco.remove(this);
+	marco.add(new Nombre_Boss_Rush());
+	marco.setVisible(true);
+              
+          }else{
+            Turno_Enemigo(); 
+            
+          }
+        }
+        
+        if (vidaa_jugador <= 0 ){
+        
+        JOptionPane.showMessageDialog(this,"Game Over");
 
+        FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
+	marco.remove(this);
+	marco.add(new MenuModo());
+	marco.setVisible(true);
+             
+        }
+        
+        
+       if (vida_enemigo <= 0 ){
+           
+           JOptionPane.showMessageDialog(this,"a morido");
+         
+        
+        FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
+	marco.remove(this);
+	marco.add(new Nombre_Boss_Rush());
+	marco.setVisible(true);
+        
+
+       }
+       
+        if(usos_fb == 3 & sifireball){
+            
+            Fire_Ball.setEnabled(false);
+        
+        }else if(usos_fb == 2 & !sifireball){
+            
+            Fire_Ball.setEnabled(false);
+
+        }
+           
+        boost_fireball = 0;
+        ResetBarras();
+        
+    }//GEN-LAST:event_Fire_BallActionPerformed
+
+    private void random_effectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_random_effectActionPerformed
+        // TODO add your handling code here:
+        
+        //Random efect cuando presionas el boton 
+        Random efecto_random = new Random();
+        efectos = efecto_random.nextInt(50);
+        
+        
+        if (efectos <= 10){
+
+            boost_atk = boost_atk + 60;
+            JOptionPane.showMessageDialog(this,"Tienes un boost de daño de 60 al atacar normal ");
+            
+            
+
+        }else if (efectos >= 11 && efectos <= 20){
+            
+            boost_hp = boost_hp +40;
+            vidaa_jugador = vidaa_jugador + boost_hp;
+            JOptionPane.showMessageDialog(this,"Acabas de recuperar 40 de vida ");
+            
+
+        }else if (efectos >= 21 && efectos <= 30) {
+            
+            boost_atk = 80;
+            boost_hp = 80;
+            JOptionPane.showMessageDialog(this,"Acabas de ser bendezido por Eir y recuperas 80 de vida y tienes 80 de daño para el siguiente ataque");
    
+        }else if (efectos >= 31 && efectos <= 40) {
+            
+            vidaa_jugador = vidaa_jugador - 30;
+            JOptionPane.showMessageDialog(this,"Vaya parece que la suerte no esta de tu lado hoy, lo siento pero 10 puntos de vida menos ");
+
+        }else if(efectos >= 41 && efectos <= 50){
+            
+            boost_fireball = boost_fireball + 100;
+            JOptionPane.showMessageDialog(this,"Sientes una gran energia recorriendo tu cuerpo, Merlin parece estar de buen humor hoy +50 de ataque en la proxima Bola de fuego ");
+            
+        }
+        
+        random_effect.setEnabled(false);
+        ResetBarras();
+        
+ 
+    }//GEN-LAST:event_random_effectActionPerformed
+
     public void Turno_Enemigo(){
         
         
@@ -548,8 +542,9 @@ public class BossRush3 extends javax.swing.JPanel {
             
             Barra_jugador.setValue(vidaa_jugador);
             
+            System.out.println("toma daño");
             
-            //log.setText("Le acierta un golpe con la espada y le hace " + daño_enemigo + "!");
+            log.setText("Le acierta un golpe con la espada y le hace " + daño_enemigo + "!");
 
             
         }
@@ -564,7 +559,7 @@ public class BossRush3 extends javax.swing.JPanel {
             Barra_enemigo.setValue(vida_enemigo);
             
             
-            //log.setText("Oh no acaba de tomarse una pocion y acaba de curarse " + curacion_enemigo + "!");
+            log.setText("Oh no acaba de tomarse una pocion y acaba de curarse " + curacion_enemigo + "!");
 
             
         }else if (ataque_enemigo == 3){
@@ -575,7 +570,7 @@ public class BossRush3 extends javax.swing.JPanel {
             
             Barra_jugador.setValue(vidaa_jugador);
                         
-            //log.setText("Acaba de hacer " + daño_enemigo + " de un golpe critico!!!!!!");
+            log.setText("Acaba de hacer " + daño_enemigo + " de un golpe critico!!!!!!");
             
             
         }
@@ -599,6 +594,7 @@ public class BossRush3 extends javax.swing.JPanel {
     
     public void ResetBarras(){
         
+        
         Barra_jugador.setValue(vidaa_jugador);
         Barra_enemigo.setValue(vida_enemigo);
         Barra_recursos.setValue(recursos);
@@ -614,18 +610,19 @@ public class BossRush3 extends javax.swing.JPanel {
     private javax.swing.JProgressBar Barra_recursos;
     private javax.swing.JLabel Boss_Name;
     private javax.swing.JButton Curacion;
+    private javax.swing.JLabel FireBall_label;
     private javax.swing.JButton Fire_Ball;
     private javax.swing.JLabel Nombre_Jugador;
     private javax.swing.JButton Salir;
     private javax.swing.JButton atacar;
+    private javax.swing.JLabel cd_heal;
     private javax.swing.JLabel hp_enemigo;
     private javax.swing.JLabel hp_jugador;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLayeredPane jLayeredPane2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea log;
     private javax.swing.JToggleButton random_effect;
     // End of variables declaration//GEN-END:variables
 }

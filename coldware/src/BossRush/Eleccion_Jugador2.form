@@ -21,110 +21,110 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="jLayeredPane2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="525" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="563" max="-2" attributes="0"/>
+                      <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
+              <EmptySpace pref="38" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="curacion_jugador" min="-2" pref="196" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+              <Component id="pa_max" min="-2" pref="232" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+              <Component id="fire_ball" min="-2" pref="228" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jLayeredPane2" min="-2" max="-2" attributes="0"/>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="261" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="curacion_jugador" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="fire_ball" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="pa_max" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JButton" name="curacion_jugador">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/descansi.gif"/>
-        </Property>
+        <Property name="text" type="java.lang.String" value="+50 de HP para ti guapo"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="curacion_jugadorActionPerformed"/>
+      </Events>
     </Component>
-    <Container class="javax.swing.JLayeredPane" name="jLayeredPane2">
+    <Component class="javax.swing.JButton" name="fire_ball">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+1 Fire Ball"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fire_ballActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="pa_max">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+ 4 PA maximos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pa_maxActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JLayeredPane" name="jLayeredPane1">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
-                          <Component id="curacion_jugador" min="-2" pref="196" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
-                          <Component id="pa_max" min="-2" pref="232" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
-                          <Component id="fire_ball" min="-2" pref="228" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="608" max="-2" attributes="0"/>
-                          <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace pref="651" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="969" max="-2" attributes="0"/>
+                  <EmptySpace pref="107" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="36" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="curacion_jugador" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                      <Component id="pa_max" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                      <Component id="fire_ball" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="867" max="-2" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="585" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="curacion_jugador">
+        <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="+50 de HP para ti guapo"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="curacion_jugadorActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="pa_max">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="+ 4 PA maximos"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pa_maxActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="fire_ball">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="+1 Fire Ball"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fire_ballActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="Nombre_Jugador">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Haga su eleccion "/>
-            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/descanso.gif"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="Nombre_Jugador">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Haga su eleccion "/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

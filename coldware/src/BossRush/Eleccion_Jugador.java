@@ -22,8 +22,7 @@ public class Eleccion_Jugador extends javax.swing.JPanel {
     int boost_elec;
     int vida_jugador;
     int reduccion_dmg;
-   
-   String Nombre_Usuario;
+    String Nombre_Usuario;
     
     
     public Eleccion_Jugador(String Nombre_Usuario,int vida_jugador) {
@@ -32,11 +31,6 @@ public class Eleccion_Jugador extends javax.swing.JPanel {
         
         this.vida_jugador = vida_jugador;
         Nombre_Jugador.setText(Nombre_Usuario);
-        
-        
-       
-        
-        
         
     }
 
@@ -49,27 +43,19 @@ public class Eleccion_Jugador extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLayeredPane1 = new javax.swing.JLayeredPane();
         curacion_jugador = new javax.swing.JButton();
-        increment_dmg = new javax.swing.JButton();
         reducir_dmg = new javax.swing.JButton();
-        Nombre_Jugador = new javax.swing.JLabel();
+        increment_dmg = new javax.swing.JButton();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jLabel1 = new javax.swing.JLabel();
+        Nombre_Jugador = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1280, 768));
 
         curacion_jugador.setText("+50 de HP ");
-        curacion_jugador.setMaximumSize(new java.awt.Dimension(191, 22));
         curacion_jugador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 curacion_jugadorActionPerformed(evt);
-            }
-        });
-
-        increment_dmg.setText("Incrementa tu daño en 10");
-        increment_dmg.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                increment_dmgActionPerformed(evt);
             }
         });
 
@@ -80,62 +66,72 @@ public class Eleccion_Jugador extends javax.swing.JPanel {
             }
         });
 
-        Nombre_Jugador.setText("Haga su eleccion ");
+        increment_dmg.setText("Incrementa tu daño en 10");
+        increment_dmg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                increment_dmgActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descansi.gif"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descanso.gif"))); // NOI18N
 
-        jLayeredPane1.setLayer(curacion_jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(increment_dmg, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(reducir_dmg, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(Nombre_Jugador, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap(171, Short.MAX_VALUE)
-                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addComponent(Nombre_Jugador)
-                        .addGap(207, 207, 207))
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(113, 113, 113)
-                        .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(137, 137, 137)))
-                .addComponent(reducir_dmg)
-                .addGap(172, 172, 172))
-            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                    .addComponent(jLabel1)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addGap(102, 102, 102)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 969, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(107, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(Nombre_Jugador)
-                .addGap(18, 18, 18)
-                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(reducir_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(637, Short.MAX_VALUE))
-            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 780, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
+
+        Nombre_Jugador.setText("Haga su eleccion ");
+        Nombre_Jugador.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(563, 563, 563)
+                        .addComponent(Nombre_Jugador)))
+                .addContainerGap(38, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(145, 145, 145)
+                .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(134, 134, 134)
+                .addComponent(reducir_dmg)
+                .addGap(154, 154, 154))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(8, 8, 8)
+                .addComponent(Nombre_Jugador)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(curacion_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reducir_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(increment_dmg, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -149,7 +145,7 @@ public class Eleccion_Jugador extends javax.swing.JPanel {
         
         FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
 	marco.remove(this);
-	marco.add(new  BossRush2(Nombre_Usuario,boost_hp,boost_elec,vida_jugador,reduccion_dmg));
+	marco.add(new BossRush2(Nombre_Usuario,boost_hp,boost_elec,vida_jugador,reduccion_dmg));
 	marco.setVisible(true);
         
     }//GEN-LAST:event_curacion_jugadorActionPerformed
@@ -163,22 +159,20 @@ public class Eleccion_Jugador extends javax.swing.JPanel {
         
         FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
 	marco.remove(this);
-	marco.add(new  BossRush2(Nombre_Usuario,boost_hp,boost_elec,vida_jugador,reduccion_dmg));
+	marco.add(new BossRush2(Nombre_Usuario,boost_hp,boost_elec,vida_jugador,reduccion_dmg));
 	marco.setVisible(true);
     }//GEN-LAST:event_increment_dmgActionPerformed
 
     private void reducir_dmgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reducir_dmgActionPerformed
         // TODO add your handling code here:
         
-       
+        
         reduccion_dmg = 10;
       
         FrameGeneral marco=(FrameGeneral) SwingUtilities.getWindowAncestor(this);
 	marco.remove(this);
 	marco.add(new BossRush2(Nombre_Usuario,boost_hp,boost_elec,vida_jugador,reduccion_dmg));
 	marco.setVisible(true);
-        
-        
     
     }//GEN-LAST:event_reducir_dmgActionPerformed
 

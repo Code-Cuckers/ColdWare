@@ -8,7 +8,6 @@ package OpcionesMenu;
 import menucoldware.FrameGeneral;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
 
@@ -16,10 +15,8 @@ import javax.swing.SwingUtilities;
  *
  * @author DAW2
  */
-
 public class MenuPrinicipal extends javax.swing.JPanel implements ActionListener {
-      int efectos;
-      
+    
     /**
      * Creates new form MenuJugar
      */
@@ -78,19 +75,19 @@ public class MenuPrinicipal extends javax.swing.JPanel implements ActionListener
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(247, 247, 247)
+                .addGap(539, 539, 539)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Jugar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(Ajustes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Salir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Informacion, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)))
-                .addContainerGap(253, Short.MAX_VALUE))
+                .addContainerGap(541, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(83, 83, 83)
+                .addGap(245, 245, 245)
                 .addComponent(Jugar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(Informacion, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -98,7 +95,7 @@ public class MenuPrinicipal extends javax.swing.JPanel implements ActionListener
                 .addComponent(Ajustes, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(61, 61, 61)
                 .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addContainerGap(248, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

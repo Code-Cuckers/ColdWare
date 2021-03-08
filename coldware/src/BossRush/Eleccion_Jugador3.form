@@ -21,40 +21,72 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="563" max="-2" attributes="0"/>
+                      <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="38" max="32767" attributes="0"/>
+          </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="79" max="32767" attributes="0"/>
-              </Group>
+              <Component id="curacion_jugador" min="-2" pref="196" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+              <Component id="increment_dmg" min="-2" pref="232" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+              <Component id="mas_fireball" min="-2" pref="228" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
-              <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" pref="773" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="curacion_jugador" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="mas_fireball" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="increment_dmg" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JButton" name="curacion_jugador">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/descansi.gif"/>
-        </Property>
+        <Property name="text" type="java.lang.String" value="+50 de HP para ti guapo"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="curacion_jugadorActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="mas_fireball">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+1 Fire Ball"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_fireballActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="increment_dmg">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+ 4 PA maximos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="increment_dmgActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JLayeredPane" name="jLayeredPane1">
 
@@ -62,69 +94,37 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
-                  <Component id="curacion_jugador" min="-2" pref="196" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
-                  <Component id="increment_dmg" min="-2" pref="232" max="-2" attributes="0"/>
-                  <EmptySpace pref="196" max="32767" attributes="0"/>
-                  <Component id="mas_fireball" min="-2" pref="228" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="577" max="-2" attributes="0"/>
-                  <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="969" max="-2" attributes="0"/>
+                  <EmptySpace pref="107" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                  <Component id="Nombre_Jugador" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="curacion_jugador" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                      <Component id="mas_fireball" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                      <Component id="increment_dmg" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="535" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="585" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="increment_dmg">
+        <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="+ 4 PA maximos"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="increment_dmgActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="mas_fireball">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="+1 Fire Ball"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_fireballActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="curacion_jugador">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="+50 de HP para ti guapo"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="curacion_jugadorActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="Nombre_Jugador">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Haga su eleccion "/>
-            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/descanso.gif"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="Nombre_Jugador">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Haga su eleccion "/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>
